@@ -1,23 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background: #f5f5f5;
-    }
-    h1 { font-size: 3rem; color: #333; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Гороскоп — персональный астрологический прогноз</title>
+<meta name="description" content="Гороскоп — приложение с ежедневными персональными прогнозами, натальной картой и совместимостью знаков зодиака.">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="icon-badge"><img src="assets/img/icons/sparkle.svg" alt=""></span>
+      Гороскоп
+    </a>
+    <nav class="nav" id="site-nav">
+      <a href="index.html" class="nav-link is-active">Главная</a>
+      <a href="privacy.html" class="nav-link">Политика конфиденциальности</a>
+      <a href="license.html" class="nav-link">Лицензионное соглашение</a>
+      <a href="support.html" class="nav-link">Поддержка</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">
+          <img class="icon" src="assets/img/icons/sparkle.svg" alt="">
+          Персональная астрология каждый день
+        </span>
+        <h1>Узнайте, что готовят звёзды <span>именно вам</span></h1>
+        <p class="hero-subtext">Точные ежедневные прогнозы, разбор натальной карты и совместимость знаков — всё в одном приложении «Гороскоп».</p>
+        <div class="hero-actions">
+          <a href="support.html" class="btn btn-primary">Связаться с нами</a>
+          <span class="store-note">Скоро в App Store и Google Play</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Возможности</span>
+        <h2>Всё для тех, кто живёт по звёздам</h2>
+        <p>Каждый день — новый персональный прогноз, основанный на вашем знаке зодиака и дате рождения.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="feature-icon"><img src="assets/img/icons/sparkle.svg" alt=""></span>
+          <h3>Гороскоп на каждый день</h3>
+          <p>Свежий прогноз по любви, карьере и здоровью, который обновляется каждое утро.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon"><img src="assets/img/icons/planet.svg" alt=""></span>
+          <h3>Натальная карта</h3>
+          <p>Подробный разбор положения планет в момент вашего рождения и его влияния на характер.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon"><img src="assets/img/icons/smile.svg" alt=""></span>
+          <h3>Совместимость знаков</h3>
+          <p>Узнайте, насколько вы совместимы с партнёром, друзьями и коллегами по знаку зодиака.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section zodiac-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">12 знаков зодиака</span>
+        <h2>Выберите свой знак</h2>
+        <p>Прогнозы для каждого знака составлены индивидуально с учётом текущего положения планет.</p>
+      </div>
+      <div class="zodiac-grid">
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/aries.svg" alt=""></span>
+          <span>Овен</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/taurus.svg" alt=""></span>
+          <span>Телец</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/gemini.svg" alt=""></span>
+          <span>Близнецы</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/cancer.svg" alt=""></span>
+          <span>Рак</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/leo.svg" alt=""></span>
+          <span>Лев</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/virgo.svg" alt=""></span>
+          <span>Дева</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/libra.svg" alt=""></span>
+          <span>Весы</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/scorpio.svg" alt=""></span>
+          <span>Скорпион</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/sagittarius.svg" alt=""></span>
+          <span>Стрелец</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/capricorn.svg" alt=""></span>
+          <span>Козерог</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/aquarius.svg" alt=""></span>
+          <span>Водолей</span>
+        </div>
+        <div class="zodiac-item">
+          <span class="glyph"><img src="assets/img/zodiac/pisces.svg" alt=""></span>
+          <span>Рыбы</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <h2>Готовы узнать, что говорят звёзды?</h2>
+        <p>Скачайте «Гороскоп» и получайте персональные прогнозы каждый день.</p>
+        <a href="support.html" class="btn btn-primary">Связаться с нами</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html" class="footer-brand">
+      <span class="icon-badge"><img src="assets/img/icons/sparkle.svg" alt=""></span>
+      Гороскоп
+    </a>
+    <ul class="footer-nav">
+      <li><a href="index.html" class="nav-link">Главная</a></li>
+      <li><a href="privacy.html" class="nav-link">Политика конфиденциальности</a></li>
+      <li><a href="license.html" class="nav-link">Лицензионное соглашение</a></li>
+      <li><a href="support.html" class="nav-link">Поддержка</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Компания. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
