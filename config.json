@@ -1,0 +1,27 @@
+{
+  "target_dir": "/Users/sm.fedorov/Documents/dev/horoscope",
+  "repo_slug": "horoscope.github.io",
+  "app_name_en_full": "Horoscope",
+  "app_name_en_short": "Horoscope",
+  "app_name_ru_full": "Гороскоп",
+  "app_name_ru_short": "Гороскоп",
+  "support_email": "chambord@kridakad.com",
+  "icon_svg_path": "/Users/sm.fedorov/Documents/dev/horoscope/assets/img/icons/sparkle.svg",
+  "icon_filename": "sparkle.svg",
+  "year": "2026",
+  "last_updated_en": "September 1, 2026",
+  "last_updated_ru": "1 сентября 2026 г.",
+  "theme_comment": "Гороскоп — лендинг. Цветовая палитра и типографика взяты из\n   дизайна приложения в Figma («Камуфляжи | Кудряшова»).",
+  "palette": {
+    "bg": "#0b0621",
+    "bg_soft": "#0f0c20",
+    "bg_elevated": "#16062e",
+    "text_muted": "#c7bcf4",
+    "accent": "#f5c451",
+    "accent_2": "#9747ff",
+    "violet": "#575cbc",
+    "violet_deep": "#8a38f5",
+    "accent_text": "#241605",
+    "btn_hover": "#f8d271"
+  }
+}
